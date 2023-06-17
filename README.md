@@ -1,6 +1,6 @@
 # EntenHub.de
 
-![EntenHub Logo](https://example.com/entenhub-logo.png)
+![EntenHub Logo](https://entenhub.de/logo.png)
 
 Willkommen bei EntenHub.de, dem zentralen Treffpunkt für Entenliebhaber! Hier finden Sie alles rund um das Thema Enten, von Informationen über verschiedene Entenarten bis hin zu Tipps zur Pflege und Haltung von Enten. Entdecken Sie eine Welt voller Federn und Schnäbel und tauchen Sie ein in die faszinierende Welt der Enten.
 
