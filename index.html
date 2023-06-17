@@ -15,25 +15,44 @@
       object-fit: cover;
       margin: 5px;
     }
+    .gallery img + span {
+      display: none; /* Hide the subtitle by default */
+    }
     .gallery a {
       display: block; /* Convert the link to a block element */
       text-align: center;
       margin-top: 10px; /* Add some spacing below the images */
     }
+
+    @media only screen and (max-width: 600px) {
+      /* Styles for mobile devices */
+      .gallery {
+        flex-direction: column; /* Stack images vertically */
+      }
+      .gallery img {
+        max-width: none; /* Remove the maximum width on mobile */
+        margin: 5px auto; /* Center the images horizontally */
+      }
+      .gallery img + span {
+        display: block; /* Show the subtitle on mobile */
+        text-align: center;
+        margin-top: 5px; /* Add spacing between the image and subtitle */
+      }
+    }
   </style>
 </head>
 <body>
   <div class="gallery">
-    <img src="1.jpg" alt="Foto 1">
-    <img src="2.png" alt="Foto 2">
-    <img src="3.jpg" alt="Foto 3">
-    <img src="4.jpg" alt="Foto 4">
-    <img src="5.jpg" alt="Foto 5">
-    <img src="6.png" alt="Foto 6">
-    <img src="7.jpg" alt="Foto 7">
-    <img src="8.jpg" alt="Foto 8">
-    <img src="9.jpg" alt="Foto 9">
-    <img src="10.jpg" alt="Foto 10">
+    <img src="1.jpg" alt="Foto 1"><span>Untertitel 1</span>
+    <img src="2.png" alt="Foto 2"><span>Untertitel 2</span>
+    <img src="3.jpg" alt="Foto 3"><span>Untertitel 3</span>
+    <img src="4.jpg" alt="Foto 4"><span>Untertitel 4</span>
+    <img src="5.jpg" alt="Foto 5"><span>Untertitel 5</span>
+    <img src="6.png" alt="Foto 6"><span>Untertitel 6</span>
+    <img src="7.jpg" alt="Foto 7"><span>Untertitel 7</span>
+    <img src="8.jpg" alt="Foto 8"><span>Untertitel 8</span>
+    <img src="9.jpg" alt="Foto 9"><span>Untertitel 9</span>
+    <img src="10.jpg" alt="Foto 10"><span>Untertitel 10</span>
 
     <a>by 🛬ミ★ DuckNCL ★彡🛫
 #7543</a>
