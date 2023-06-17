@@ -6,21 +6,19 @@
     .gallery {
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: center; /* Center the images horizontally */
     }
     .gallery img {
-      width: 200px;
-      height: 200px;
+      width: 100%; /* Adjust the width to fit the container */
+      max-width: 200px; /* Limit the maximum width of the images */
+      height: auto; /* Maintain aspect ratio */
       object-fit: cover;
       margin: 5px;
     }
-
-    /* Media query for mobile devices */
-    @media only screen and (max-width: 600px) {
-      .gallery img {
-        width: 100%;
-        height: auto;
-      }
+    .gallery a {
+      display: block; /* Convert the link to a block element */
+      text-align: center;
+      margin-top: 10px; /* Add some spacing below the images */
     }
   </style>
 </head>
