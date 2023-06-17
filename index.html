@@ -6,12 +6,21 @@
     .gallery {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
     }
     .gallery img {
       width: 200px;
       height: 200px;
       object-fit: cover;
       margin: 5px;
+    }
+
+    /* Media query for mobile devices */
+    @media only screen and (max-width: 600px) {
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
     }
   </style>
 </head>
