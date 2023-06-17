@@ -1,64 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>entenhub</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    .gallery {
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+      padding: 10px;
+    }
+    
+    .photo-item {
       display: flex;
-      flex-wrap: wrap;
-      justify-content: center; /* Center the images horizontally */
+      justify-content: center;
+      align-items: center;
     }
-    .gallery img {
-      width: 100%; /* Adjust the width to fit the container */
-      max-width: 200px; /* Limit the maximum width of the images */
-      height: auto; /* Maintain aspect ratio */
-      object-fit: cover;
-      margin: 5px;
-    }
-    .gallery a {
-      display: block; /* Convert the link to a block element */
-      text-align: center;
-      margin-top: 10px; /* Add some spacing below the images */
-    }
-
-    /* Media Query for mobile layout */
-    @media (max-width: 600px) {
-      .gallery img {
-        width: 50%; /* Display two images per row */
-        max-width: none; /* Remove the maximum width limit */
-      }
-      .gallery a {
-        margin-top: 5px; /* Reduce the spacing below the images */
-        font-size: 12px; /* Reduce the font size of the caption */
-      }
+    
+    .photo-item img {
+      max-width: 100%;
+      height: auto;
     }
   </style>
 </head>
 <body>
-  <div class="gallery">
-    <img src="1.jpg" alt="Foto 1">
-    <a>Foto 1</a>
-    <img src="2.png" alt="Foto 2">
-    <a>Foto 2</a>
-    <img src="3.jpg" alt="Foto 3">
-    <a>Foto 3</a>
-    <img src="4.jpg" alt="Foto 4">
-    <a>Foto 4</a>
-    <img src="5.jpg" alt="Foto 5">
-    <a>Foto 5</a>
-    <img src="6.png" alt="Foto 6">
-    <a>Foto 6</a>
-    <img src="7.jpg" alt="Foto 7">
-    <a>Foto 7</a>
-    <img src="8.jpg" alt="Foto 8">
-    <a>Foto 8</a>
-    <img src="9.jpg" alt="Foto 9">
-    <a>Foto 9</a>
-    <img src="10.jpg" alt="Foto 10">
-    <a>Foto 10</a>
-
-    <a>by 🛬ミ★ DuckNCL ★彡🛫
-#7543</a>
+  <div class="photo-grid">
+    <div class="photo-item">
+      <img src="1.jpg" alt="Foto 1">
+    </div>
+    <div class="photo-item">
+      <img src="2.png" alt="Foto 2">
+    </div>
+    <div class="photo-item">
+      <img src="3.jpg" alt="Foto 3">
+    </div>
+    <div class="photo-item">
+      <img src="4.jpg" alt="Foto 4">
+    </div>
+    <div class="photo-item">
+      <img src="5.jpg" alt="Foto 5">
+    </div>
+    <div class="photo-item">
+      <img src="6.png" alt="Foto 6">
+    </div>
+    <div class="photo-item">
+      <img src="7.jpg" alt="Foto 7">
+    </div>
+    <div class="photo-item">
+      <img src="8.jpg" alt="Foto 8">
+    </div>
+    <div class="photo-item">
+      <img src="9.jpg" alt="Foto 9">
+    </div>
+    <div class="photo-item">
+      <img src="10.jpg" alt="Foto 10">
+    </div>
   </div>
 </body>
 </html>
