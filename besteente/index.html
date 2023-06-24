@@ -4,15 +4,8 @@
   <title>Automatisches Abspielen einer MP4-Datei</title>
 </head>
 <body>
-  <video id="test" controls autoplay>
+  <video id="test" controls autoplay muted>
     <source src="test.mp4" type="video/mp4">
   </video>
-
-  <script>
-    var video = document.getElementById("test");
-    video.addEventListener('canplaythrough', function() {
-      video.play();
-    });
-  </script>
 </body>
 </html>
