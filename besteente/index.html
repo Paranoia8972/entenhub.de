@@ -1,36 +1,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Embedded YouTube Video</title>
+  <title>Test</title>
 </head>
 <body>
-  <div id="player"></div>
-
-  <script>
-    // Load the YouTube Player API asynchronously
-    var tag = document.createElement('script');
-    tag.src = "https://www.youtube.com/iframe_api";
-    var firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // Function to create and initialize the YouTube player
-    var player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        videoId: 'dQw4w9WgXcQ',
-        playerVars: {
-          autoplay: 1, // Autoplay the video
-        },
-        events: {
-          'onReady': onPlayerReady,
-        }
-      });
-    }
-
-    // Function to start playing the video when the player is ready
-    function onPlayerReady(event) {
-      event.target.playVideo();
-    }
-  </script>
+  <video src="test.mp4" autoplay></video>
 </body>
 </html>
