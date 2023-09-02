@@ -3,66 +3,54 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* Your existing styles here */
-
-    .lightbox {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.7);
-      text-align: center;
-      z-index: 999;
+    body {
+      background-color: #ffffff;
+      font-family: Arial, sans-serif;
     }
 
-    .lightbox img {
-      max-width: 90%;
-      max-height: 80%;
-      margin-top: 5%;
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #222222;
+      }
     }
 
-    .description {
-      color: #fff;
-      font-size: 18px;
-      margin-top: 10px;
+    .photo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 10px;
+      padding: 10px;
+      justify-items: center; /* Center items horizontally */
+    }
+    
+    .photo-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ddd;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    
+    .photo-item img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover; /* Maintain aspect ratio while filling the container */
+      border-radius: 5px;
     }
   </style>
 </head>
 <body>
   <div class="photo-grid">
-    <!-- Your existing photo items here -->
-    <!-- Add a lightbox feature to each image -->
-    <div class="photo-item" onclick="openLightbox('1.jpg', 'Description for Photo 1')">
+    <!-- You can dynamically generate these photo items using a loop in the future -->
+    <div class="photo-item">
       <img src="1.jpg" alt="Foto 1">
+    </div>
+    <div class="photo-item">
+      <img src="2.png" alt="Foto 2">
     </div>
     <!-- Add more photo items here -->
   </div>
-
-  <!-- Lightbox container -->
-  <div id="imageLightbox" class="lightbox" onclick="closeLightbox()">
-    <span class="close" onclick="closeLightbox()">&times;</span>
-    <img id="lightboxImage" src="" alt="Lightbox Image">
-    <div id="imageDescription" class="description"></div>
-  </div>
-
-  <script>
-    // JavaScript functions for the lightbox
-    function openLightbox(imageSrc, description) {
-      var lightbox = document.getElementById("imageLightbox");
-      var lightboxImage = document.getElementById("lightboxImage");
-      var imageDescription = document.getElementById("imageDescription");
-
-      lightbox.style.display = "block";
-      lightboxImage.src = imageSrc;
-      imageDescription.innerText = description;
-    }
-
-    function closeLightbox() {
-      var lightbox = document.getElementById("imageLightbox");
-      lightbox.style.display = "none";
-    }
-  </script>
 </body>
 </html>
