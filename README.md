@@ -44,6 +44,6 @@ Bitte lesen Sie unsere [Beitragungsrichtlinien](CONTRIBUTING.md), um weitere Inf
 
 Wenn Sie Fragen, Anregungen oder Feedback haben, können Sie uns wie folgt kontaktieren:
 
-E-Mail: info@entenhub.de 
+E-Mail: [info@entenhub.de](mailto:info@entenhub.de)
 Social Media: Folgen Sie uns auf Twitter für die neuesten Updates und Nachrichten.
 Wir freuen uns von Ihnen zu hören und wünschen Ihnen viel Spaß auf EntenHub.de!
